@@ -1,0 +1,192 @@
+body{
+    background-color: #F5F7FC;
+}
+.linkbox{
+    background-color: #fff;
+    position: relative;
+    top: 87px;
+    width: 350px;
+    height: 700px;
+    padding: none;
+    left: -22px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+    
+}
+.user-img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    top: 46px;
+    left: 35px;
+    position: relative;
+}
+.user-name{
+    font-family: 'Poppins';
+    font-size: 25px;
+    color: #373737;
+    top: -16px;
+    left: 133px;
+    position: relative;
+}
+.block{
+   
+    height: 350px;
+    width: 1052px;
+    margin-right: 40px;
+    left: 426px;
+    background-color: #fff;
+    position: relative;
+    top: 46px;
+    border-radius: 10px;
+
+
+}
+.block h1{
+font-family: 'Poppins';
+font-size: 18px;
+position: relative;
+left: 20px;
+top: 37px;
+font-weight: 200;
+}
+
+.block h3{
+    font-size: 15px;
+    font-family: 'Montserrat';
+    position: relative;
+left: 20px;
+top: 57px;
+font-weight: 400;
+
+}
+
+.block h2{
+    color: #727272;
+    font-size: 15px;
+    font-family: 'Montserrat';
+    position: relative;
+left: 20px;
+top: 107px;
+font-weight: 400;
+
+}
+.password{
+    position: relative;
+    top: 120px;
+    width: 50%;
+    background-color: #77838f1f;
+    color: #fff;
+    border: none;
+}
+.password:hover,
+.password:visited{
+    position: relative;
+    top: 120px;
+    width: 50%;
+    background-color: #fff;
+    color: #373737;
+    border: none;
+}
+input[type=text]{
+    width: 50%;
+    left: 15px;
+    color: #fff;
+}
+input[type=text]:hover,
+input[type=text]:visited{
+    width: 50%;
+    left: 15px;
+    color: #fff;
+    border: 2px solid #0446e5;
+}
+.btn-delete{
+    background-color: #e50404c0;
+    position: relative;
+    color: #fff;
+    top: 186px;
+    left: -500px;
+}
+.btn-delete:hover{
+    background-color: #e50404dd;
+    position: relative;
+    color: #fff;
+    top: 186px;
+    left: -500px;
+}
+input[type=password]{
+    width: 50%;
+    left: 15px;
+    color: #fff;
+}
+input[type=password]:hover,
+input[type=password]:visited{
+    width: 50%;
+    left: 15px;
+    color: #fff;
+    border: 2px solid #0446e5;
+}
+.pw{
+    position: relative;
+    top: 50px;
+}
+.enterpw{
+    margin-top: 30px;
+}
+.btn-pw{
+    background-color: #0446e5;
+    position: relative;
+    color: #fff;
+    top: 150px;
+    left: -500px;
+}
+.btn-pw:hover{
+    background-color:#0447e595;
+    position: relative;
+    color: #fff;
+    top: 150x;
+    left: -500px;
+}
+.block1 h1{
+    font-family: 'Poppins';
+    font-size: 18px;
+    position: relative;
+    left: 20px;
+    top: 37px;
+    font-weight: 200;
+    }
+    
+    .block1 h3{
+        font-size: 15px;
+        font-family: 'Montserrat';
+        position: relative;
+    left: 20px;
+    top: 57px;
+    font-weight: 400;
+    
+    }
+    
+    .block1 h2{
+        color: #727272;
+        font-size: 15px;
+        font-family: 'Montserrat';
+        position: relative;
+    left: 20px;
+    top: 107px;
+    font-weight: 400;
+    
+    }
+
+    .block1{
+   
+        height: 516px;
+        width: 1052px;
+        margin-right: 40px;
+        left: 426px;
+        background-color: #fff;
+        position: relative;
+        top: 46px;
+        border-radius: 10px;
+    
+    
+    }

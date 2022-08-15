@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(228, 228, 228 , 0.5);
+}
+.linkbox{
+    background-color: #fff;
+    position: relative;
+    top: 87px;
+    width: 350px;
+    height: 700px;
+    padding: none;
+    left: -22px;
+    
+}
+.block{
+   
+    height: 1500px;
+    width: 1052px;
+    margin-right: 40px;
+    left: 426px;
+    background-color: #fff;
+    position: relative;
+    top: 46px;
+    border-radius: 10px;
+
+
+}

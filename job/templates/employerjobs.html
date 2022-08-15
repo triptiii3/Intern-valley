@@ -1,0 +1,90 @@
+{% load static %}
+{% block body %}
+{% include 'navigation.html' %}
+{% include 'employerdetail.html' %}
+<link rel="stylesheet" href="{%static 'employershortlist.css'%}">
+<link rel="stylesheet" href="{%static 'fluid.css'%}">
+<h1 class="heading-1"> Manage Jobs</h1>
+<div class="block">
+    <div class="row">
+        <form class="nosubmit">
+            <input class="nosubmit" type="search" placeholder="Search">
+          </form>
+          <label class="select-heading">Sort by:</label>
+          <select name="new" id="sortby">
+            <option value="Default">Default</option>
+            <option value="Newest">Newest</option>
+            <option value="Oldest">Oldest</option>
+            
+          </select>
+                
+            </div>
+            <h1>Data of our planets</h1>
+
+            <!--   start planet data and make a table   -->
+            <table>
+              <!--   add table caption     -->
+             
+          
+              <!--    add colgroup and col to explicitly style the third column with black border  -->
+              <colgroup>
+                <col span="2" />
+                <col style="border: 2px solid black" />
+                <!--   add another col element which spans 9 column, else nu validator will throw
+          # A table row was 12 columns wide and exceeded the column count established using column markup (3).
+          error  -->
+                <col span="5">
+              </colgroup>
+          
+              <!--    add table head    -->
+              <thead>
+                <!--    header row of the table      -->
+                <tr>
+                  <td colspan="2"></td>
+                  <th scope="col">Name</th>
+                  <th scope="col">Mass (10<sup>24</sup>kg)</th>
+                  <th scope="col">Diameter (km)</th>
+                  <th scope="col">Density (kg/m<sup>3</sup>)</th>
+                  <th scope="col">Gravity (m/s<sup>2</sup>)</th>
+                 
+                </tr>
+              </thead>
+          
+              <!--    add table body    -->
+              <tbody>
+                <!--     first row of the table body     -->
+                <tr>
+                  <th rowspan="4" colspan="2" scope="rowgroup">Terrestrial planets</th>
+                  <th scope="row">Mercury</th>
+                  <td>0.330</td>
+                  <td>4,879</td>
+                  <td>5427</td>
+                  <td>3.7</td>
+                  <td>4222.6</td>
+                  <td>57.9</td>
+                  <td>167</td>
+                  <td>0</td>
+                  <td>Closest to the Sun</td>
+                </tr>
+          
+                <!--     second row of the table body     -->
+                <tr>
+                  <th scope="row">Venus</th>
+                  <td>4.87</td>
+                  <td>12,104</td>
+                  <td>5243</td>
+                  <td>8.9</td>
+                  <td>2802.0</td>
+                  <td>108.2</td>
+                  <td>464</td>
+                  <td>0</td>
+                  <td></td>
+                </tr>
+          
+               
+              </tbody>
+            </table>
+
+</div>
+
+{% endblock %}

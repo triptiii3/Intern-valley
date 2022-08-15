@@ -1,0 +1,115 @@
+{% load static %}
+{% block body %}
+{% include 'navigation.html' %}
+{% include 'candidatepage.html' %}
+<link rel="stylesheet" href="{%static 'candidatepage.css'%}">
+<link rel="stylesheet" href="{%static 'fluid.css'%}">
+<h1 class="heading-1"> Application Statistics</h1>
+<div class="row">
+<div class=" cards">
+    <div class="card-inner1">
+        <div class="card-box1">
+            <img src="{% static './images/job.png'%}">
+        </div>
+            <h1>1</h1>
+            <h3> Applied<br> Internships</h3>
+        
+   </div>
+</div>
+<div class=" cards">
+    <div class="card-inner2">
+        <div class="card-box2">
+            <img src="{% static './images/review.png'%}">
+        </div>
+            <h1>4</h1>
+            <h3>
+                Reviews
+            </h3>
+        
+   </div>
+ </div>
+ <div class=" cards">
+    <div class="card-inner3">
+        <div class="card-box3">
+            <img src="{% static './images/eye.png'%}">
+        </div>
+            <h1>158</h1>
+            <h3>Views</h3>
+        
+   </div>
+ </div>
+ <div class=" cards">
+    <div class="card-inner4">
+        <div class="card-box4">
+            <img src="{% static './images/savep.png'%}">
+        </div>
+            <h1>2</h1>
+            <h3> Shortlisted </h3>
+        
+   </div>
+ </div>
+</div>
+<div class="row">
+    
+    
+        <div class="block">
+            <div>
+                <h1>Internships applied recently</h1>
+            </div>
+            <div class="row">
+                <div class="applicant-box">  
+                    <h1>
+                        Junior Graphic Designer
+                    </h1>
+                    <div class="clickoption1">
+                       <img src="{%static './images/cross.png'%}">
+                    </div>  
+                    <div class="clickoption2">
+                        <img src="{%static './images/download.png'%}">
+                     </div>  
+                     <div class="clickoption3">
+                        <img src="{%static './images/return.png'%}">
+                     </div>  
+                     <div class="clickoption4">
+                        <img src="{%static './images/correct.png'%}">
+                     </div>  
+                     <div class="clickoption5">
+                        <img src="{%static './images/add.png'%}">
+                     </div>  
+                 </div>
+            </div>
+            <div class="row">
+                <div class="applicant-box">
+                    <div class="inner-box">
+                        <h3 class="applicant-name">John Josua</h3>
+                       <div class="job-status2">
+                           <h3 class="status">Approved</h3>
+   
+                       </div>
+                       <h3 class="applicant-job-type">Junior Graphic Designer (Web)</h3>
+                       <h3 class="applied-date">Applied date: July 20, 2022</h3>
+                       </div>       
+                       <div class="clickoption1">
+                          <img src="{%static './images/cross.png'%}">
+                       </div>  
+                       <div class="clickoption2">
+                           <img src="{%static './images/download.png'%}">
+                        </div>  
+                        <div class="clickoption3">
+                           <img src="{%static './images/return.png'%}">
+                        </div>  
+                        <div class="clickoption4">
+                           <img src="{%static './images/add.png'%}">
+                        </div>  
+                        
+                                </div>
+            </div>
+            
+            
+        </div>
+        
+
+
+
+</div>
+{% endblock %}

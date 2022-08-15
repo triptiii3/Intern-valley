@@ -1,0 +1,712 @@
+{% load static %}
+{% block body %}
+{% include 'navigation.html' %}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Poppins:wght@400;500&display=swap"
+  rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<link rel="stylesheet" href="{% static 'fluid.css'%}">
+<link rel="stylesheet" href="{% static 'jquery.flipster.css'%}">
+
+
+<header>
+  <div class=" heading">
+    <h2 class="wow slideInLeft">
+      Looking for
+      <span style="color: #0466e5;">internships</span> or freelancing opportunities?
+    </h2>
+    
+
+  </div>
+  
+      
+  <div class="search-outer-box wow slideInLeft">
+    <div class="search-inner-box">
+      <div class="container">
+        <form class="nosubmit">
+          <input class="nosubmit" type="search" placeholder="Internship title or keywords">
+        </form>
+        <select name="new" id="new">
+        <option value="Default"> <img src="{%static './images/search-icon.png'%}">City or Postcode</option>
+        <option value="Newest">Newest</option>
+        <option value="Oldest">Oldest</option>
+        
+      </select>
+        <a href="a" class="btn new" type="submit">Find Internships</a>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="header-subheading wow slideInLeft">
+    <h2>Popular Searches:</h2>
+    <h3> Machine learning ,</h3> <h3> Web Development ,</h3> <h3>Data science ,</h3> <h3>Graphic designer</h3>
+
+
+  </div>
+  <div class="  header-image wow slideInRight">
+    <img src="{% static './images/slider1.png'%}">
+  </div>
+
+ 
+  
+</header>
+<section class="secondpage">
+  
+  <h1 class="section-heading wow slideInDown dta ">You are?</h1>
+
+<div class="row wow bounceInLeft">
+<div class="col span_1_of_3 section-box">
+ <div class="flip-card">
+   <div class="flip-card-inner">
+     <div class="flip-card-front">
+       <img class="flip-image" src="{% static './images/ill1.png'%}" alt="Avatar" style="width:250px;height:250px;"><h2 class="flip-head">An Employer</h2>
+     </div>
+     <div class="flip-card-back">
+       <figure class="img-bg ">
+         
+          <img src="{% static './images/bg1.png'%}">
+       <h1 class="img-text">
+         Find candidates, add 
+job openings, create company
+       </h1>
+       <a href="{% url 'user_login'%}" class="img-link"> Register </a>
+       </figure>
+       
+
+     </div>
+   </div>
+ </div>
+</div>
+<div class="col span_1_of_3 section-box">
+ <div class="flip-card">
+   <div class="flip-card-inner">
+     <div class="flip-card-front">
+       <img class="flip-image" src="{% static './images/ill2.png'%}" alt="Avatar" style="width:250px;height:250px;"><h2 class="flip-head">A Candidate</h2>
+       
+     </div>
+     <div class="flip-card-back">
+       <figure class="img-bg">
+        
+         
+         <img src="{% static './images/bg2.png'%}">
+         <h1 class="img-text">
+          Find Jobs , internships 
+          as per your skills
+        </h1>
+        <a href="{% url 'user_login'%}" class="img-link"> Register </a>
+        </figure>
+      
+      </figure>
+
+     </div>
+   </div>
+ </div>
+</div>
+<div class="col span_1_of_3 section-box">
+ <div class="flip-card">
+   <div class="flip-card-inner">
+     <div class="flip-card-front">
+       <img class="flip-image" src="{% static './images/ill3.png'%}" alt="Avatar" style="width:250px;height:250px;"><h2 class="flip-head">A Freelancer</h2>
+     </div>
+     <div class="flip-card-back">
+       <figure class="img-bg">
+        
+         
+         <img src="{% static './images/bg3.png'%}">
+         <h1 class="img-text">
+          Find candidates, add 
+ job openings, create company
+        </h1>
+        <a href="{% url 'user_login'%}" class="img-link"> Register </a>
+        </figure>
+      
+      </figure>
+     </div>
+   </div>
+ </div>
+</div>
+</div>
+</section>
+<section class="thirdpage">
+  
+  <h1 class="section-heading wow slideInDown">Popular <span style="color: #0466e5;">Internship</span> Categories</h1>
+  <div class="row">
+    <div class="col span_1_of_3 category-box">
+     <div class="categories wow zoomIn">
+       <div class="category-box">
+        <img class="icon-box" src="{% static './images/data-sci.png'%}" >
+       
+        <h2 class=" category-heading">Machine Learning</h2>
+       </div>
+     </div>
+    </div>
+    <div class="col span_1_of_3 category-box">
+      <div class="categories wow zoomIn">
+        <div class="category-box">
+         <img class="icon-box" src="{% static './images/web-d.png'%}" >
+         
+        
+        
+         <h2 class=" category-heading">Web Development</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col span_1_of_3 category-box">
+      <div class="categories wow zoomIn">
+        <div class="category-box">
+         <img class="icon-box" src="{% static './images/marketing.png'%}" >
+         <h2 class=" category-heading">Marketing</h2>
+        </div>
+      
+      </h3>
+    </div>
+    
+     </div>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col span_1_of_3 category-box">
+       <div class="categories wow zoomIn">
+         <div class="category-box">
+          <img class="icon-box" src="{% static './images/finance.png'%}" >
+         
+          <h2 class=" category-heading">Accountancy and Finance</h2>
+         </div>
+       </div>
+      </div>
+      <div class="col span_1_of_3 category-box">
+        <div class="categories wow zoomIn">
+          <dh3 class="category-box">
+           <img class="icon-box" src="{% static './images/design.png'%}" >
+          
+          
+           <h2 class=" category-heading">Design</h2>
+          </dh3>
+        </div>
+      </div>
+      <div class="col span_1_of_3 category-box">
+        <div class="categories wow zoomIn">
+          <div class="category-box">
+           <img class="icon-box" src="{% static './images/HR.png'%}" >
+           <h2 class=" category-heading">Human Resources</h2>
+          </div>
+        
+        </div>
+      </div>
+      
+       </div>
+      </div>
+      </div>
+  
+      <div class="row">
+        <div class="col span_1_of_3 category-box">
+         <div class="categories wow zoomIn">
+           <div class="category-box">
+            <img class="icon-box" src="{% static './images/customerservice.png'%}" >
+           
+            <h2 class=" category-heading">Customer Service</h2>
+           </div>
+         </div>
+        </div>
+        <div class="col span_1_of_3 category-box">
+          <div class="categories wow zoomIn">
+            <div class="category-box">
+             <img class="icon-box" src="{% static './images/health.png'%}" >
+            
+            
+             <h2 class=" category-heading">Health and Care</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col span_1_of_3 category-box">
+          <div class="categories wow zoomIn">
+            <div class="category-box">
+             <img class="icon-box" src="{% static './images/project.png'%}" >
+             <h2 class=" category-heading">Project Management</h2>
+             
+            </div>
+          
+          </div>
+        </div>
+        
+         </div>
+        </div>
+        <a href="a" class="btn btn-see-more1 " type="submit">See More</a>
+        </div>
+        
+      
+  
+    
+  </section>
+    
+  <section class="fourthpage">
+    <div class="photo-page">
+       <h1></h1>
+    </div>
+  
+  </section>
+  
+  <section class="fifthpage">
+    <h1 class="section-heading wow slideInDown">Discover <span style="color: #0466e5;">Internships</span> for you</h1>
+  
+  
+  <div class="row">
+   <div class="internship-box1">
+    <div class="content wow zoomIn" >
+      <div class="filtered-category"><h1>IT & Programming</h1></div>
+      <div class="add-option"><img class="plus" src= "{% static './images/plus.png'%}" ></div>
+      <img class="category-icon" src="{% static './images/data-sci.png'%}" >
+      <h1 class="type">Data Science</h1>
+      <h2 class="company">AWS Service Ltd.</h2>
+      <div class="location"> <img src="{% static './images/location.png'%}"><h2>Delhi, India</h2></div>
+      <div class="stipend"><img src="{% static './images/cash.png'%}"><h3>5-10k</h3>  </div>
+    </div>
+
+   </div>
+   <div class=" internship-box2">
+    <div class="content wow zoomIn" >
+      <div class="filtered-category"><h1>IT & Programming</h1></div>
+      <div class="add-option"><img class="plus" src= "{% static './images/plus.png'%}" ></div>
+      <img class="category-icon" src="{% static './images/data-sci.png'%}" >
+      <h1 class="type">Data Science</h1>
+      <h2 class="company">AWS Service Ltd.</h2>
+      <div class="location"> <img src="{% static './images/location.png'%}"><h2>Delhi, India</h2></div>
+      <div class="stipend"><img src="{% static './images/cash.png'%}"><h3>5-10k</h3>  </div>
+    </div>
+
+   </div>
+   <div class=" internship-box3">
+    <div class="content wow zoomIn" >
+      <div class="filtered-category"><h1>IT & Programming</h1></div>
+      <div class="add-option"><img class="plus" src= "{% static './images/plus.png'%}" ></div>
+      <img class="category-icon" src="{% static './images/data-sci.png'%}" >
+      <h1 class="type">Data Science</h1>
+      <h2 class="company">AWS Service Ltd.</h2>
+      <div class="location"> <img src="{% static './images/location.png'%}"><h2>Delhi, India</h2></div>
+      <div class="stipend"><img src="{% static './images/cash.png'%}"><h3>5-10k</h3>  </div>
+    </div>
+
+  </div>
+        
+  </div>  
+  <div class="row">
+    <div class="internship-box1">
+     <div class="content wow zoomIn" >
+       <div class="filtered-category"><h1>IT & Programming</h1></div>
+       <div class="add-option"><img class="plus" src= "{% static './images/plus.png'%}" ></div>
+       <img class="category-icon" src="{% static './images/data-sci.png'%}" >
+       <h1 class="type">Data Science</h1>
+       <h2 class="company">AWS Service Ltd.</h2>
+       <div class="location"> <img src="{% static './images/location.png'%}"><h2>Delhi, India</h2></div>
+       <div class="stipend"><img src="{% static './images/cash.png'%}"><h3>5-10k</h3>  </div>
+     </div>
+ 
+    </div>
+    <div class=" internship-box2">
+     <div class="content wow zoomIn" >
+       <div class="filtered-category"><h1>IT & Programming</h1></div>
+       <div class="add-option"><img class="plus" src= "{% static './images/plus.png'%}" ></div>
+       <img class="category-icon" src="{% static './images/data-sci.png'%}" >
+       <h1 class="type">Data Science</h1>
+       <h2 class="company">AWS Service Ltd.</h2>
+       <div class="location"> <img src="{% static './images/location.png'%}"><h2>Delhi, India</h2></div>
+       <div class="stipend"><img src="{% static './images/cash.png'%}"><h3>5-10k</h3>  </div>
+     </div>
+ 
+    </div>
+    <div class=" internship-box3">
+     <div class="content wow zoomIn" >
+       <div class="filtered-category"><h1>IT & Programming</h1></div>
+       <div class="add-option"><img class="plus" src= "{% static './images/plus.png'%}" ></div>
+       <img class="category-icon" src="{% static './images/data-sci.png'%}" >
+       <h1 class="type">Data Science</h1>
+       <h2 class="company">AWS Service Ltd.</h2>
+       <div class="location"> <img src="{% static './images/location.png'%}"><h2>Delhi, India</h2></div>
+       <div class="stipend"><img src="{% static './images/cash.png'%}"><h3>5-10k</h3>  </div>
+     </div>
+ 
+   </div>
+         
+   </div>  
+   <div class="row">
+    <div class="internship-box1">
+     <div class="content wow zoomIn" >
+       <div class="filtered-category"><h1>IT & Programming</h1></div>
+       <div class="add-option"><img class="plus" src= "{% static './images/plus.png'%}" ></div>
+       <img class="category-icon" src="{% static './images/data-sci.png'%}" >
+       <h1 class="type">Data Science</h1>
+       <h2 class="company">AWS Service Ltd.</h2>
+       <div class="location"> <img src="{% static './images/location.png'%}"><h2>Delhi, India</h2></div>
+       <div class="stipend"><img src="{% static './images/cash.png'%}"><h3>5-10k</h3>  </div>
+     </div>
+ 
+    </div>
+    <div class=" internship-box2">
+     <div class="content wow zoomIn" >
+       <div class="filtered-category"><h1>IT & Programming</h1></div>
+       <div class="add-option"><img class="plus" src= "{% static './images/plus.png'%}" ></div>
+       <img class="category-icon" src="{% static './images/data-sci.png'%}" >
+       <h1 class="type">Data Science</h1>
+       <h2 class="company">AWS Service Ltd.</h2>
+       <div class="location"> <img src="{% static './images/location.png'%}"><h2>Delhi, India</h2></div>
+       <div class="stipend"><img src="{% static './images/cash.png'%}"><h3>5-10k</h3>  </div>
+     </div>
+ 
+    </div>
+    <div class=" internship-box3">
+     <div class="content wow zoomIn" >
+       <div class="filtered-category"><h1>IT & Programming</h1></div>
+       <div class="add-option"><img class="plus" src= "{% static './images/plus.png'%}" ></div>
+       <img class="category-icon" src="{% static './images/data-sci.png'%}" >
+       <h1 class="type">Data Science</h1>
+       <h2 class="company">AWS Service Ltd.</h2>
+       <div class="location"> <img src="{% static './images/location.png'%}"><h2>Delhi, India</h2></div>
+       <div class="stipend"><img src="{% static './images/cash.png'%}"><h3>5-10k</h3>  </div>
+     </div>
+ 
+   </div>
+         
+   </div>  
+  <a href="a" class="btn btn-see-more" type="submit">See More</a>
+  
+  </section>
+  
+  <section class="sixthpage">
+    <div class="row">
+      <div class="col span_1_of_2  photo-box ">
+        <img src="{% static './images/img1.jpg'%}">
+  
+      </div>
+      <div class="col span_1_of_2 about-photo ">
+        <h1>We help <span style="color: #0466e5;">top companies, startups </span> to find talents</h1>
+        <h3>New as a startup? Looking for talented employees to make your company top-tier?
+          Register as a company with us and get regular applications from the most talented candidates and hire them!</h3>
+  
+      </div>
+    </div>
+  
+  </section>
+  
+  <section class="seventhpage">
+    <h1 class="section-heading7 wow slideInDown">Reviews</h1>
+    <h2 class="section-sub-heading wow slideInDown">Lets see what people hired through our website have to say</h2>
+    <div class="container">
+      <section id="testim" class="testim">
+               <div class="testim-cover">
+                  <div class="wrap">
+      
+                      <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+                      <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
+                      <ul id="testim-dots" class="dots">
+                          <li class="dot active"></li><!--
+                          --><li class="dot"></li><!--
+                          --><li class="dot"></li><!--
+                          --><li class="dot"></li><!--
+                          --><li class="dot"></li>
+                      </ul>
+                      <div id="testim-content" class="cont">
+                          
+                          <div class="active">
+                              <div class="img"><img src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/kartik-aaryan-1045198-08-12-2017-06-34-11.jpg" alt=""></div>
+                              <h2>Lorem P. Ipsum</h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                          </div>
+      
+                          <div>
+                              <div class="img"><img src="https://timesofindia.indiatimes.com/thumb/msid-75752690,width-800,height-600,resizemode-4/75752690.jpg" alt=""></div>
+                              <h2>Mr. Lorem Ipsum</h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                          </div>
+      
+                          <div>
+                              <div class="img"><img src="https://p16.muscdn.com/img/musically-maliva-obj/1627333501517830~c5_720x720.jpeg" alt=""></div>
+                              <h2>Lorem Ipsum</h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                          </div>
+      
+                          <div>
+                              <div class="img"><img src="https://p16-sg-default.akamaized.net/aweme/1080x1080/tiktok-obj/1666413671597057.jpeg" alt=""></div>
+                              <h2>Lorem De Ipsum</h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                          </div>
+      
+                          <div>
+                              <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSKLJe1Lrz2N3ufVSwQokSJ79jGBbIptXuVnsdxMmNUlE14ohwp&usqp=CAU" alt=""></div>
+                              <h2>Ms. Lorem R. Ipsum</h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                          </div>
+      
+                      </div>
+      
+                  </div>
+               </div>
+          </section>
+      </div>
+     
+      
+    
+  </section>
+  
+  <footer class="footer theme-bg-primary wow fadeInLeft " id="foot">
+   <div class="container py-5 mb-3 col-md-offset-2">
+    <div class="row" style="margin-left: 20px">
+      <div class="footer-col col-lg-3 about-us">
+        <h4 class="col-heading">About us
+        </h4>
+        <p class="about-us-para">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+        </p>
+        <ul class="social-list">
+          <li class="list-inline-item">
+            <a href="">
+              <i class="fa fa-instagram fa-2x icons"></i>
+            </a>
+  
+          </li>
+          <li class="list-inline-item" >
+            <a href="">
+              <i class="fa fa-twitter fa-2x icons"></i>
+            </a>
+  
+          </li>
+          <li class="list-inline-item">
+            <a href="">
+              <i class="fa fa-facebook fa-2x icons"></i>
+            </a>
+  
+          </li>
+  
+        </ul>
+  
+      </div>
+      <div class="footer-col col-lg-3">
+        <h4 class="col-heading">Employer
+        </h4>
+        <ul>
+          
+          <li class="links">
+            <a href="{% url 'user_login'%}" class="link-head">
+             Register
+            </a>
+  
+          </li>
+          <li class="links">
+            <a href="{% url 'employerpage'%}" class="link-head">
+              Post internship
+            </a>
+  
+          </li>
+         
+          <li class="links">
+            <a href="{% url 'hirefreelancer'%}" class="link-head">
+              Hire a Freelancer
+            </a>
+  
+          </li>
+        </ul>
+  
+      </div>
+      
+      <div class="footer-col col-lg-3">
+        <h4 class="col-heading">Candidate
+        </h4>
+        <ul>
+          
+          <li class="links">
+            <a href="{% url 'user_login'%}" class="link-head">
+             Register
+            </a>
+  
+          </li>
+          <li class="links">
+            <a href="{% url 'canduser'%}" class="link-head">
+              Post your skills
+            </a>
+  
+          </li>
+          <li class="links">
+            <a href="{% url 'canduser'%}" class="link-head">
+              Internship Search
+            </a>
+  
+          </li>
+          
+        </ul>
+  
+      </div>
+      <div class="footer-col col-lg-3">
+        <h4 class="col-heading">Freelancer
+        </h4>
+        <ul class="link">
+          
+          <li class="links">
+            <a href="{% url 'user_login'%}" class="link-head">
+             Register
+            </a>
+  
+          </li>
+          <li class="links">
+            <a href="{% url 'hirefreelancer'%}" class="link-head">
+              Update your profile
+            </a>
+  
+          </li>
+          
+        </ul>
+  
+      </div>
+  
+    </div>
+  
+    </div>
+   
+    
+ 
+    <div class="ocean">
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="{% static 'js/jquery.flipster.min.js'%}"></script>
+  <script  src="{% static 'js/flipster-custom.js'%}"></script>
+  <script  src="{%static 'js/wow.min.js'%}"></script>
+  
+  <script src="{% static 'js/index.js'%}"></script>
+  <script>
+    $(window).scroll(function(){
+    var scrl = $(window).scrollTop();
+    if(scrl < 60)
+        {
+            $('.navbar').removeClass('fixedbar');
+        }
+    else{
+        $('.navbar').addClass('fixedbar');
+    }
+});
+  </script>
+  <script>
+    'use strict'
+var	testim = document.getElementById("testim"),
+		testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
+    testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
+    testimLeftArrow = document.getElementById("left-arrow"),
+    testimRightArrow = document.getElementById("right-arrow"),
+    testimSpeed = 4500,
+    currentSlide = 0,
+    currentActive = 0,
+    testimTimer,
+		touchStartPos,
+		touchEndPos,
+		touchPosDiff,
+		ignoreTouch = 30;
+;
+
+window.onload = function() {
+
+    // Testim Script
+    function playSlide(slide) {
+        for (var k = 0; k < testimDots.length; k++) {
+            testimContent[k].classList.remove("active");
+            testimContent[k].classList.remove("inactive");
+            testimDots[k].classList.remove("active");
+        }
+
+        if (slide < 0) {
+            slide = currentSlide = testimContent.length-1;
+        }
+
+        if (slide > testimContent.length - 1) {
+            slide = currentSlide = 0;
+        }
+
+        if (currentActive != currentSlide) {
+            testimContent[currentActive].classList.add("inactive");            
+        }
+        testimContent[slide].classList.add("active");
+        testimDots[slide].classList.add("active");
+
+        currentActive = currentSlide;
+    
+        clearTimeout(testimTimer);
+        testimTimer = setTimeout(function() {
+            playSlide(currentSlide += 1);
+        }, testimSpeed)
+    }
+
+    testimLeftArrow.addEventListener("click", function() {
+        playSlide(currentSlide -= 1);
+    })
+
+    testimRightArrow.addEventListener("click", function() {
+        playSlide(currentSlide += 1);
+    })    
+
+    for (var l = 0; l < testimDots.length; l++) {
+        testimDots[l].addEventListener("click", function() {
+            playSlide(currentSlide = testimDots.indexOf(this));
+        })
+    }
+
+    playSlide(currentSlide);
+
+    // keyboard shortcuts
+    document.addEventListener("keyup", function(e) {
+        switch (e.keyCode) {
+            case 37:
+                testimLeftArrow.click();
+                break;
+                
+            case 39:
+                testimRightArrow.click();
+                break;
+
+            case 39:
+                testimRightArrow.click();
+                break;
+
+            default:
+                break;
+        }
+    })
+		
+		testim.addEventListener("touchstart", function(e) {
+				touchStartPos = e.changedTouches[0].clientX;
+		})
+	
+		testim.addEventListener("touchend", function(e) {
+				touchEndPos = e.changedTouches[0].clientX;
+			
+				touchPosDiff = touchStartPos - touchEndPos;
+			
+				console.log(touchPosDiff);
+				console.log(touchStartPos);	
+				console.log(touchEndPos);	
+
+			
+				if (touchPosDiff > 0 + ignoreTouch) {
+						testimLeftArrow.click();
+				} else if (touchPosDiff < 0 - ignoreTouch) {
+						testimRightArrow.click();
+				} else {
+					return;
+				}
+			
+		})
+}
+  </script>
+  <script>
+    new WOW().init();
+    </script>
+  </footer> 
+  
+  
+  
+{% endblock %}

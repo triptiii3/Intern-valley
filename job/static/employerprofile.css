@@ -1,0 +1,90 @@
+body{
+    background-color: rgb(228, 228, 228 , 0.5);
+}
+.linkbox{
+    background-color: #fff;
+    position: relative;
+    top: 87px;
+    width: 350px;
+    height: 700px;
+    padding: none;
+    left: -22px;
+    
+}
+.block{
+   
+    height: 1500px;
+    width: 1052px;
+    margin-right: 40px;
+    left: 426px;
+    background-color: #fff;
+    position: relative;
+    top: 46px;
+    border-radius: 10px;
+
+
+}
+.block h1{
+font-family: 'Poppins';
+font-size: 25px;
+position: relative;
+left: 20px;
+top: 37px;
+font-weight: 200;
+}
+.sub-heading1{
+    font-family: 'Montserrat';
+    font-size: 18px;
+    top: 75px;
+    position: relative;
+    left: 20px;
+
+}
+.sub-heading2{
+    font-family: 'Montserrat';
+    font-size: 18px;
+    top: 131px;
+    position: relative;
+    left: 20px;
+    margin-top: 30px;
+
+}
+
+#name{
+    top: 147px;
+    position: relative;
+    width: 90%;
+    left: 18px;
+
+}
+#name:hover,
+#name:active{
+   text-decoration: none;
+   border: 2px solid #0048a7;
+
+}
+.logo-image img{
+    width: 100px;
+    height: 79px;
+    position: relative;
+    top: 100px;
+    border-radius: 5px;
+    left: 20px;
+margin-bottom: -50px;}
+
+.browse-btn{
+    position: relative;
+    top: 7px;
+    left: 25px;
+    text-decoration: none;
+}
+.browse{
+    background-color: #0447e52a;
+   color: #373737;
+   height: 32px;
+   width: 94px;
+   position: relative;
+   left: 150px;
+   top: 90px;
+   border-radius: 5px;
+}

@@ -1,0 +1,22 @@
+{% load static %}
+{% block body %}
+{% include 'navigation.html' %}
+{% include 'candidatepage.html' %}
+
+<link rel="stylesheet" href="{%static 'canddel.css'%}">
+<link rel="stylesheet" href="{%static 'fluid.css'%}">
+<h1 class="heading-1"> Change Password</h1>
+<div class="row">
+<div class="block1">
+    <h1 class="enterpw">Enter your old password</h1>
+    
+    <input type="password" placeholder="" name="uname" class="pw" required>
+    <h1 class="enterpw">Enter your new password</h1>
+    
+    <input type="password" placeholder="" name="uname" class="pw" required>
+    <h1 class="enterpw">Confirm your new password</h1>
+    
+    <input type="password" placeholder="" name="uname" class="pw" required>
+    <a href="a" class="btn btn-pw">Change Password</a>
+</div>
+{% endblock %}

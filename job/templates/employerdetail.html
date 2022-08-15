@@ -1,0 +1,60 @@
+{% load static %}
+{% block body %}
+{% include 'navbar2.html' %}
+<link rel="stylesheet" href="{%static 'employer.css'%}">
+<link rel="stylesheet" href="{%static 'fluid.css'%}">
+<div class="col linkbox fixedcontent" >
+    <img src="{%static './images/user.jpg'%}" class="user-img">
+    <h1 class="user-name">
+        John Josua
+    </h1>
+    
+    <a href="#" class="edit-option">
+        Edit your profile
+    </a>
+<div class="edit-box1">
+    <img src="{%static './images/userd.png'%}" class="usericon">
+
+    <a href="{%url 'employerpage'%}" class="option1">
+        User Dashboard
+    </a>
+</div>
+<div class="edit-box2">
+    <img src="{%static './images/users.png'%}" class="usericon">
+    <a class="option2" href="{%url 'employerprofile'%}">
+        Profile
+    </a>
+    </div>
+    <div class="edit-box3">
+        <img src="{%static './images/resume.png'%}" class="usericon">
+    <a class="option3" href="{%url 'employerjobs'%}">
+     Posted internships
+    </a></div>
+    <div class="edit-box4">
+        <img src="{%static './images/apply.png'%}" class="usericon">
+    <a class="option4" href="{%url 'employersubmit'%}">
+        Post New internships
+    </a></div>
+    <div class="edit-box5">
+        <img src="{%static './images/save.png'%}" class="usericon">
+    <a class="option5" href="{%url 'employershortlist'%}">
+        Shortlist Candidates
+    </a></div>
+    <div class="edit-box6">
+        <img src="{%static './images/pw.png'%}" class="usericon">
+    <a class="option6" href="{%url 'employerpw'%}">
+        Change Password
+    </a></div>
+    <div class="edit-box7">
+        <img src="{%static './images/delete.png'%}" class="usericon">
+    <a class="option7" href="{%url 'employerdel'%}">
+        Delete profile
+    </a></div>
+    <div class="edit-box8">
+        <img src="{%static './images/logout.png'%}" class="usericon">
+    <a class="option8" href="{%url 'index'%}">
+        Logout
+    </a></div>
+</div>
+</div>
+{% endblock %}

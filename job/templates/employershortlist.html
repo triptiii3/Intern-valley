@@ -1,0 +1,76 @@
+{% load static %}
+{% block body %}
+{% include 'navigation.html' %}
+{% include 'employerdetail.html' %}
+<link rel="stylesheet" href="{%static 'employershortlist.css'%}">
+<link rel="stylesheet" href="{%static 'fluid.css'%}">
+<h1 class="heading-1"> Candidate Shortlist</h1>
+<div class="block">
+    <div class="row">
+    <form class="nosubmit">
+        <input class="nosubmit" type="search" placeholder="Search">
+      </form>
+      <label class="select-heading">Sort by:</label>
+      <select name="new" id="new">
+        <option value="Default">Default</option>
+        <option value="Newest">Newest</option>
+        <option value="Oldest">Oldest</option>
+        
+      </select>
+            
+        </div>
+    <div class="row">
+        <div class="applicant-box"> 
+            <img src="{% static './images/user.jpg'%}" class="userphoto" >
+            <div class="inner-box">
+             <h3 class="applicant-name">John Josua</h3>
+            <div class="job-status2">
+                <h3 class="status">Approved</h3>
+
+            </div>
+            <h3 class="applicant-job-type">Junior Graphic Designer (Web)</h3>
+            <h3 class="applied-date">Applied date: July 20, 2022</h3>
+            </div>       
+            <div class="clickoption1">
+               <img src="{%static './images/cross.png'%}">
+            </div>  
+            <div class="clickoption2">
+                <img src="{%static './images/message.png'%}">
+             </div>  
+             <div class="clickoption3">
+                <img src="{%static './images/viewp.png'%}">
+             </div>  
+            
+    </div>
+    <div class="row">
+        <div class="applicant-box">
+            <div class="inner-box">
+                <img src="{% static './images/user.jpg'%}" class="userphoto" >
+                <h3 class="applicant-name">John Josua</h3>
+               <div class="job-status2">
+                   <h3 class="status">Approved</h3>
+
+               </div>
+               <h3 class="applicant-job-type">Junior Graphic Designer (Web)</h3>
+               <h3 class="applied-date">Applied date: July 20, 2022</h3>
+               </div>       
+               <div class="clickoption1">
+                <img src="{%static './images/cross.png'%}">
+             </div>  
+             <div class="clickoption2">
+                 <img src="{%static './images/message.png'%}">
+              </div>  
+              <div class="clickoption3">
+                 <img src="{%static './images/viewp.png'%}">
+              </div>  
+                
+                        </div>
+    </div>
+    
+   
+    
+</div>
+
+
+</div>
+{% endblock %}

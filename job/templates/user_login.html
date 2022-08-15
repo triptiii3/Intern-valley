@@ -1,0 +1,47 @@
+{% load static %}
+{% block body %}
+
+<link rel="stylesheet" href="{% static 'register.css'%}">
+<div class="content">
+	<div class="container">
+		<div class="nav">
+			<button class="btn btn1" id="btns1" onclick="showLogin()">Candidate</button>
+			<button class="btn btn2" id="btns2" onclick="showSignup()">employer</button>
+		</div>
+		<div class="main">
+			<form id="login" class="loginClass">
+				{% csrf_token %}
+				<input type="email" id="email" name="email" placeholder="Email" required><br>
+				<input type="text" id="username" name="uname" placeholder="Username" required><br>
+				<input type="password" id="password" name="pwd" placeholder="Password" required><br>
+				<input type="password" id="password" name="cpwd" placeholder="Confirm Password" required><br>
+				<button type="submit" class="signBtn">CREATE ACCOUNT</button>
+			</form>
+			<form id="signUp" class="signupClass">
+				{% csrf_token %}
+				<input type="email" id="email" name="email" placeholder="Email" required><br>
+				<input type="text" id="username" name="uname" placeholder="Username" required><br>
+				<input type="password" id="password"name="pwd" placeholder="Password" required><br>
+				<input type="password" id="password" name="cpwd" placeholder="Confirm Password" required><br>
+				<button type="submit" class="signBtn">CREATE ACCOUNT</button>
+			</form>
+		</div>
+	</div>
+</div>
+<script>
+	function showSignup(){
+    document.getElementById("signUp").style.display = "flex";
+    document.getElementById("login").style.display = "none";
+    document.getElementById("btns2").style.backgroundColor = "white";
+    document.getElementById("btns1").style.backgroundColor = "#0466e573";
+}
+function showLogin(){
+    document.getElementById("signUp").style.display = "none";
+    document.getElementById("login").style.display = "flex";
+    document.getElementById("btns1").style.backgroundColor = "white";
+    document.getElementById("btns2").style.backgroundColor = "#0466e573";
+}
+</script>
+
+
+{% endblock %}

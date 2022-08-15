@@ -1,0 +1,666 @@
+body{
+    background-color: #F5F7FC;
+}
+.linkbox{
+    background-color: #fff;
+    position: relative;
+    top: 87px;
+    width: 350px;
+    height: 700px;
+    padding: none;
+    left: -22px;
+    box-shadow:0px 0px 4px rgba(0, 0, 0, 0.25);
+  
+}
+
+.user-img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    top: 46px;
+    left: 35px;
+    position: relative;
+}
+.user-name{
+    font-family: 'Poppins';
+    font-size: 25px;
+    color: #373737;
+    top: -16px;
+    left: 133px;
+    position: relative;
+}
+.edit-option{
+    font-family: 'Montserrat';
+    font-size: 15px;
+    color: #0446e5;
+    top: -9px;
+    left: 144px;
+    position: relative;
+    text-decoration: none;
+}
+.option1{
+    
+    color: #373737;
+    position: relative;
+    display: flex;
+    padding: 5px 58px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 200;
+    top: -14px;
+    left: 7px;
+}
+.option2{
+    
+    color: #373737;
+    position: relative;
+    display: flex;
+    padding: 16px 104px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 200;
+    top: -24px;
+    left: -40px;
+}
+.option3{
+    
+    color: #373737;
+    position: relative;
+    display: flex;
+    padding: 17px 63px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 200;
+    top: -24px;
+    position: relative;
+    left: 0px;
+}
+.option4{
+    
+    color: #373737;
+    position: relative;
+    display: flex;
+    padding: 17px 55px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 200;
+    top: -24px;
+    left: 7px;
+}
+.option5{
+    
+    color: #373737;
+    position: relative;
+    display: flex;
+    padding: 15px 58px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 200;
+    top: -24px;
+}
+.option6{
+    
+    color: #373737;
+    position: relative;
+    display: flex;
+    padding: 15px 64px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 200;
+    top: -24px;
+}
+.option7{
+    
+    color: #373737;
+    position: relative;
+    display: flex;
+    padding: 16px 64px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 200;
+    top: -24px;
+}
+.option8{
+    
+    color: #373737;
+    position: relative;
+    display: flex;
+    padding: 15px 64px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 200;
+    top: -24px;
+}
+
+.edit-box1{
+    background-color: #fff;
+    color: #373737;
+    cursor: pointer;
+    position: relative;
+    top: 46px;
+    height: 46px;
+    width: 280px;
+    left: 26px;
+    border-radius: 5px;
+}
+.edit-box1:hover,
+.edit-box1:visited{
+    background-color:#0447e52a;
+   color: #373737;
+    position: relative;
+    top: 46px;
+    height: 46px;
+    width: 280px;
+    left: 26px;
+    border-radius: 5px;
+}
+.edit-box2{
+    background-color: #fff;
+    color: #373737;
+    cursor: pointer;
+    position: relative;
+    top: 68px;
+    height: 46px;
+    width: 280px;
+    left: 26px;
+    border-radius: 5px;
+}
+.edit-box2:hover{
+    background-color: #0447e52a;
+   color: #373737;
+    position: relative;
+    top: 68x;
+    height: 46px;
+    width: 280px;
+    left: 26px;
+    border-radius: 5px;
+}
+.edit-box3{
+    background-color: #fff;
+    color: #373737;
+    cursor: pointer;
+    position: relative;
+    top: 86px;
+    height: 46px;
+    width: 280px;
+    left: 26px;
+    border-radius: 5px;
+}
+.edit-box3:hover{
+    background-color: #0447e52a;
+   color: #373737;
+    position: relative;
+    top: 86px;
+    height: 46px;
+    width: 280px;
+    left: 26px;
+    border-radius: 5px;
+   
+}
+.edit-box4{
+    background-color: #fff;
+    color: #373737;
+    cursor: pointer;
+    position: relative;
+    top: 107px;
+    height: 46px;
+    width: 280px;
+    left: 26px;
+    border-radius: 5px;
+}
+.edit-box4:hover{
+    background-color: #0447e52a;
+   color: #373737;
+    position: relative;
+    top: 107px;
+    height: 46px;
+    width: 280px;
+    left: 26px;
+    border-radius: 5px;
+}
+.edit-box5{
+    background-color: #fff;
+    color: #373737;
+    cursor: pointer;
+    position: relative;
+    top: 133px;
+    height: 46px;
+    width: 280px;
+    left: 26px;
+    border-radius: 5px;
+}
+.edit-box5:hover{
+    background-color: #0447e52a;
+   color: #373737;
+    position: relative;
+    top: 133px;
+    height: 46px;
+    width: 280px;
+    left: 26px;
+    border-radius: 5px;
+}
+.edit-box6{
+    background-color: #fff;
+    color: #373737;
+    cursor: pointer;
+    position: relative;
+    top: 157px;
+    height: 46px;
+    width: 280px;
+    left: 26px;
+    border-radius: 5px;
+}
+.edit-box6:hover{
+    background-color: #0447e52a;
+   color: #373737;
+    position: relative;
+    top: 157px;
+    height: 46px;
+    width: 280px;
+    left: 26px;
+    border-radius: 5px;
+}
+.edit-box7{
+    background-color: #fff;
+    color: #373737;
+    cursor: pointer;
+    position: relative;
+    top: 176px;
+    height: 46px;
+    width: 280px;
+    left: 26px;
+    border-radius: 5px;
+}
+.edit-box7:hover{
+    background-color: #0447e52a;
+   color: #373737;
+    position: relative;
+    top: 176px;
+    height: 46px;
+    width: 280px;
+    left: 26px;
+    border-radius: 5px;
+}
+.edit-box8{
+    background-color: #fff;
+    color: #373737;
+    cursor: pointer;
+    position: relative;
+    top: 198px;
+    height: 46px;
+    width: 280px;
+    left: 26px;
+    border-radius: 5px;
+}
+.edit-box8:hover{
+    background-color: #0447e52a;
+   color: #373737;
+    position: relative;
+    top: 198px;
+    height: 46px;
+    width: 280px;
+    left: 26px;
+    border-radius: 5px;
+}
+.usericon{
+    width: 25px;
+    height: 25px;
+    left: 18px;
+    top: 12px;
+    border-radius: 0;
+    position: relative;
+}
+.heading-1{
+    margin-top: -547px;
+    left: 421px;
+    position: relative;
+    font-family: 'Poppins';
+    font-size: 35px;
+    font-weight: 400;
+
+}
+.cards{
+    height: 114px;
+    width: 232px;
+    margin-right: 40px;
+    left: 426px;
+    background-color: #fff;
+    position: relative;
+    top: 40px;
+    box-shadow:0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+
+}
+.card-inner1{
+   padding: 21px 14px;
+}
+.card-inner2{
+    padding: 21px 14px;
+ }
+.card-inner3{
+    padding: 21px 14px;
+
+}
+.card-inner4{
+    padding: 21px 14px;
+
+}
+.card-box1{
+    height: 69px;
+    width: 75px;
+    background-color: #0447e528;
+    border-radius: 5px;
+    
+}
+.card-box1 img{
+    height: 38px;
+    position: relative;
+    width: 37px;
+    top: 14px;
+    left: 19px
+}
+.card-inner1 h1{
+    float: right;
+    color: #0446e5;
+    font-size: 30px;
+    top: -64px;
+    position: relative;
+    font-weight: 400;
+}
+.card-inner1 h3{
+    float: right;
+    color: #373737;
+    font-size: 15px;
+    position: relative;
+    left: 30px;
+    top: -20px;
+}
+.card-box2{
+    height: 69px;
+    width: 75px;
+    background-color: #f78f1f39;
+    border-radius: 5px;
+}
+.card-box2 img{
+    height: 38px;
+    position: relative;
+    width: 37px;
+    top: 14px;
+    left: 19px
+}
+.card-inner2 h1{
+    float: right;
+    color: #f78f1f;
+    font-size: 30px;
+    top: -64px;
+    position: relative;
+    font-weight: 400;
+}
+.card-inner2 h3{
+    float: right;
+    color: #373737;
+    font-size: 15px;
+    position: relative;
+    left: 30px;
+    top: -20px;
+}
+.card-box3{
+    height: 69px;
+    width: 75px;
+    background-color: rgba(251, 4, 4, 0.223);
+    border-radius: 5px;
+}
+.card-box3 img{
+    height: 38px;
+    position: relative;
+    width: 37px;
+    top: 14px;
+    left: 19px
+}
+.card-inner3 h1{
+    float: right;
+    color: rgba(251, 1,1);
+    font-size: 30px;
+    top: -64px;
+    position: relative;
+    font-weight: 400;
+    left: 15px;
+}
+.card-inner3 h3{
+    float: right;
+    color: #373737;
+    font-size: 15px;
+    position: relative;
+    left: 65px;
+    top: -20px;
+}
+.card-box4{
+    height: 69px;
+    width: 75px;
+    background-color: rgba(73, 195, 62, 0.223);
+    border-radius: 5px;
+}
+.card-box4 img{
+    height: 38px;
+    position: relative;
+    width: 37px;
+    top: 14px;
+    left: 19px
+}
+.card-inner4 h1{
+    float: right;
+    color: rgba(73, 195,62);
+    font-size: 30px;
+    top: -64px;
+    position: relative;
+    font-weight: 400;
+    left: 11px;
+}
+.card-inner4 h3{
+    float: right;
+    color: #373737;
+    font-size: 15px;
+    position: relative;
+    left: 36px;
+    top: -20px;
+}
+.block{
+   
+        height: 967px;
+        width: 1052px;
+        margin-right: 40px;
+        left: 426px;
+        background-color: #fff;
+        position: relative;
+        top: 100px;
+        border-radius: 5px;
+        box-shadow:0px 0px 4px rgba(0, 0, 0, 0.25);
+    
+}
+.block h1{
+    font-family: 'Poppins';
+    font-size: 25px;
+    position: relative;
+    left: 20px;
+    top: 45px;
+    font-weight: 200;
+}
+
+.applicant-box{
+    border: 1px solid #ccc;
+    height: 130px;
+    width: 977px;
+    position: relative;
+    top: 100px;
+    left: 34px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.inner-box{
+    padding: 30px 30px;
+}
+
+.applicant-name{
+    font-family: 'Montserrat';
+    font-size: 18px;
+    color: #373737;
+    float: left;
+display: block;    position: relative;
+}
+.applicant-job-type{
+    color: #0446e5;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    float: left;
+    position: relative;
+    display: block;
+    top: 12px;
+    left: 0px
+}
+.applied-date{
+    font-family: 'Montserrat';
+    font-size: 12px;
+    color: #868686;
+    float: left;
+    top: 41px;
+    left: -232px;
+    position: relative;
+}
+.clickoption1{
+    height: 40px;
+    width: 40px;
+    background-color: #0447e522;
+    padding: 8px 9px;
+    float: right;
+    
+    top: -52px;
+    margin: 12px;
+    border-radius: 5px;
+    position: relative;
+}
+.job-status1{
+    height: 22px;
+    width: 90px;
+    background-color: #04b0e5;
+    color: #373737;
+    font-size: 15px;
+    border-radius: 5px;
+    position: relative;
+    left: 110px;
+}
+.job-status2{
+    height: 22px;
+    width: 90px;
+    background-color: #008a29;
+    color: #373737;
+    font-size: 15px;
+    border-radius: 5px;
+    position: relative;
+    left: 110px;
+}
+.job-status3{
+    height: 22px;
+    width: 90px;
+    background-color: #9b0101;
+    color: #373737;
+    font-size: 15px;
+    border-radius: 5px;
+    position: relative;
+    left: 110px;
+}
+.status{
+    font-size: 10px;
+    font-family: 'Montserrat';
+    top: -17px;
+    left: 24px;
+    position: relative;
+    color: #fff;
+
+}
+.clickoption1 img{
+    height: 25px;
+    width: 25px;
+}
+.clickoption2{
+    height: 40px;
+    width: 40px;
+    background-color: #0447e522;
+    padding: 11px 10px;
+    float: right;
+    
+    top: -52px;
+    margin: 12px;
+    border-radius: 5px;
+    position: relative;
+
+}
+.clickoption2 img{
+    height: 20px;
+    width: 20px;
+}
+.clickoption3{
+    height: 40px;
+    width: 40px;
+    background-color: #0447e522;
+    padding: 11px 10px;
+    float: right;
+    
+    top: -52px;
+    margin: 12px;
+    border-radius: 5px;
+    position: relative;
+
+}
+.clickoption3 img{
+    height: 18px;
+    width: 18px;
+}
+.clickoption4{
+    height: 40px;
+    width: 40px;
+    background-color: #0447e522;
+    padding: 11px 10px;
+    float: right;
+    
+    top: -52px;
+    margin: 12px;
+    border-radius: 5px;
+    position: relative;
+
+}
+.clickoption4 img{
+    height: 20px;
+    width: 20px;
+}
+.clickoption5{
+    height: 40px;
+    width: 40px;
+    background-color: #0447e522;
+    padding: 11px 10px;
+    float: right;
+    
+    top: -52px;
+    margin: 12px;
+    border-radius: 5px;
+    position: relative;
+
+}
+.clickoption5 img{
+    height: 20px;
+    width: 20px;
+}

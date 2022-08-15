@@ -1,0 +1,17 @@
+{% load static %}
+{% block body %}
+{% include 'navigation.html' %}
+{% include 'candidatepage.html' %}
+<link rel="stylesheet" href="{%static 'canddel.css'%}">
+<link rel="stylesheet" href="{%static 'fluid.css'%}">
+<h1 class="heading-1"> Delete Profile</h1>
+<div class="row">
+<div class="block">
+    <h1> Are you sure you want to delete your profile?</h1>
+    <h3> This can't be undone!</h3>
+
+    <h2>Please enter your login password to continue</h2>
+    <input type="text" placeholder="Enter Password" name="uname" class="password" required>
+    <a href="a" class="btn btn-delete">Delete profile</a>
+</div>
+{% endblock %}

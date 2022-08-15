@@ -1,0 +1,73 @@
+{% load static %}
+{% block body %}
+{% include 'navigation.html' %}
+{% include 'candidatepage.html' %}
+<link rel="stylesheet" href="{%static 'employerprofile.css'%}">
+<link rel="stylesheet" href="{%static 'fluid.css'%}">
+<h1 class="heading-1"> Edit Profile</h1>
+<div class="row">
+
+<div class="row">
+    
+    
+        <div class="block">
+            <div>
+                <h1>My Profile</h1>
+            </div>
+            <div class="logo-image">
+                <h3 class="sub-heading1">Logo Image</h3>
+                <img src="{% static './images/logo.png'%}">
+                <div class="browse">
+                <a href="#" class="browse-btn">Browse</a></div>
+            </div>
+        <div class="row"> 
+            <div class="col span_1_of_2 employer-name">
+                <h3 class="sub-heading2">Employer Name</h3>
+                <input type="text" id="name" minlength="4" maxlength="15" required />
+            </div>
+            <div class="col span_1_of_2 employer-name">
+                <h3 class="sub-heading2">Email</h3>
+                <input type="text" id="name" minlength="4" maxlength="15" required />
+            </div>
+        </div>
+        <div class="row"> 
+            <div class="col span_1_of_2 employer-name">
+                <h3 class="sub-heading2"> Phone Number</h3>
+                <input type="text" id="name" minlength="4" maxlength="15" required />
+            </div>
+            <div class="col span_1_of_2 employer-name">
+                <h3 class="sub-heading2">Website</h3>
+                <input type="text" id="name" minlength="4" maxlength="15" required />
+            </div>
+        </div>
+        <div class="row"> 
+            <div class="col span_1_of_2 employer-name">
+                <h3 class="sub-heading2">Founded Date</h3>
+                <input type="text" id="name" minlength="4" maxlength="15" required />
+            </div>
+            <div class="col span_1_of_2 employer-name">
+                <h3 class="sub-heading2">Team Size</h3>
+                <input type="text" id="name" minlength="4" maxlength="15" required />
+            </div>
+        </div>
+        <div class="row"> 
+            <div class="col span_1_of_2 employer-name">
+                <h3 class="sub-heading2">Categories</h3>
+                <input type="text" id="name" minlength="4" maxlength="15" required />
+            </div>
+            
+        </div>
+        <div class="row"> 
+            <div class="col employer-name">
+                <h3 class="sub-heading2">About company</h3>
+                <input type="text" id="name" minlength="4" maxlength="15" required />
+            </div>
+            
+        </div>
+        </div>
+        
+
+
+
+</div>
+{% endblock %}

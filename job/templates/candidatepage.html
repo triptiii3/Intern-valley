@@ -1,0 +1,60 @@
+{% load static %}
+{% block body %}
+{% include 'navbar2.html' %}
+<link rel="stylesheet" href="{%static 'candidatepage.css'%}">
+<link rel="stylesheet" href="{%static 'fluid.css'%}">
+<link rel="stylesheet" href="{%static 'navbar2.css'%}">
+<div class="col linkbox" >
+    <img src="{%static './images/user.jpg'%}" class="user-img">
+    <h1 class="user-name">
+        John Josua
+    </h1>
+    
+    <a href="#" class="edit-option">
+        Edit your profile
+    </a>
+<div class="edit-box1">
+    <img src="{%static './images/userd.png'%}" class="usericon">
+
+    <a href="{% url 'canduser'%}" class="option1">
+        User Dashboard
+    </a>
+</div>
+<div class="edit-box2">
+    <img src="{%static './images/users.png'%}" class="usericon">
+    <a href="{% url 'candprofile'%}" class="option2">
+        Profile
+    </a>
+    </div>
+    <div class="edit-box3">
+        <img src="{%static './images/resume.png'%}" class="usericon">
+    <a class="option3" href="{% url 'candresume'%}">
+       My resume
+    </a></div>
+    <div class="edit-box4">
+        <img src="{%static './images/apply.png'%}" class="usericon">
+    <a class="option4" href="{% url 'candappjobs'%}">
+        My applied Jobs
+    </a></div>
+    <div class="edit-box5">
+        <img src="{%static './images/save.png'%}" class="usericon">
+    <a class="option5" href="{% url 'candshortjobs'%}">
+        Shortlisted Jobs
+    </a></div>
+    <div class="edit-box6">
+        <img src="{%static './images/pw.png'%}" class="usericon">
+    <a class="option6" href="{% url 'candpw'%}">
+        Change Password
+    </a></div>
+    <div class="edit-box7">
+        <img src="{%static './images/delete.png'%}" class="usericon">
+    <a class="option7" href="{% url 'canddel'%}">
+        Delete profile
+    </a></div>
+    <div class="edit-box8">
+        <img src="{%static './images/logout.png'%}" class="usericon">
+    <a class="option8" href="{% url 'index'%}">
+        Logout
+    </a></div>
+</div>
+{% endblock %}
