@@ -60,7 +60,7 @@
   
   <h1 class="section-heading wow slideInDown dta ">You are?</h1>
 
-<div class="row wow bounceInLeft">
+<div class="row ">
 <div class="col span_1_of_3 section-box">
  <div class="flip-card">
    <div class="flip-card-inner">
@@ -75,7 +75,7 @@
          Find candidates, add 
 job openings, create company
        </h1>
-       <a href="{% url 'user_login'%}" class="img-link"> Register </a>
+       <a href="{% url 'user_signup'%}" class="img-link"> Register </a>
        </figure>
        
 
@@ -99,7 +99,7 @@ job openings, create company
           Find Jobs , internships 
           as per your skills
         </h1>
-        <a href="{% url 'user_login'%}" class="img-link"> Register </a>
+        <a href="{% url 'user_signup'%}" class="img-link"> Register </a>
         </figure>
       
       </figure>
@@ -123,7 +123,7 @@ job openings, create company
           Find candidates, add 
  job openings, create company
         </h1>
-        <a href="{% url 'user_login'%}" class="img-link"> Register </a>
+        <a href="{% url 'user_signup'%}" class="img-link"> Register </a>
         </figure>
       
       </figure>
@@ -136,18 +136,18 @@ job openings, create company
 <section class="thirdpage">
   
   <h1 class="section-heading wow slideInDown">Popular <span style="color: #0466e5;">Internship</span> Categories</h1>
-  <div class="row">
+  <div class="row">{% for n in icategorydata%}
     <div class="col span_1_of_3 category-box">
-     <div class="categories wow zoomIn">
+     <div class="categories ">
        <div class="category-box">
-        <img class="icon-box" src="{% static './images/data-sci.png'%}" >
+        <img class="icon-box" src="{{ n.category_icon.url  }}" >
        
-        <h2 class=" category-heading">Machine Learning</h2>
+        <h2 class=" category-heading">{{n.category_name}}</h2>
        </div>
      </div>
-    </div>
-    <div class="col span_1_of_3 category-box">
-      <div class="categories wow zoomIn">
+    </div>{%endfor%}
+    <!-- <div class="col span_1_of_3 category-box">
+      <div class="categories ">
         <div class="category-box">
          <img class="icon-box" src="{% static './images/web-d.png'%}" >
          
@@ -158,7 +158,7 @@ job openings, create company
       </div>
     </div>
     <div class="col span_1_of_3 category-box">
-      <div class="categories wow zoomIn">
+      <div class="categories ">
         <div class="category-box">
          <img class="icon-box" src="{% static './images/marketing.png'%}" >
          <h2 class=" category-heading">Marketing</h2>
@@ -167,76 +167,12 @@ job openings, create company
       </h3>
     </div>
     
-     </div>
+     </div> -->
     </div>
     </div>
-    <div class="row">
-      <div class="col span_1_of_3 category-box">
-       <div class="categories wow zoomIn">
-         <div class="category-box">
-          <img class="icon-box" src="{% static './images/finance.png'%}" >
-         
-          <h2 class=" category-heading">Accountancy and Finance</h2>
-         </div>
-       </div>
-      </div>
-      <div class="col span_1_of_3 category-box">
-        <div class="categories wow zoomIn">
-          <dh3 class="category-box">
-           <img class="icon-box" src="{% static './images/design.png'%}" >
-          
-          
-           <h2 class=" category-heading">Design</h2>
-          </dh3>
-        </div>
-      </div>
-      <div class="col span_1_of_3 category-box">
-        <div class="categories wow zoomIn">
-          <div class="category-box">
-           <img class="icon-box" src="{% static './images/HR.png'%}" >
-           <h2 class=" category-heading">Human Resources</h2>
-          </div>
-        
-        </div>
-      </div>
-      
-       </div>
-      </div>
-      </div>
+   
   
-      <div class="row">
-        <div class="col span_1_of_3 category-box">
-         <div class="categories wow zoomIn">
-           <div class="category-box">
-            <img class="icon-box" src="{% static './images/customerservice.png'%}" >
-           
-            <h2 class=" category-heading">Customer Service</h2>
-           </div>
-         </div>
-        </div>
-        <div class="col span_1_of_3 category-box">
-          <div class="categories wow zoomIn">
-            <div class="category-box">
-             <img class="icon-box" src="{% static './images/health.png'%}" >
-            
-            
-             <h2 class=" category-heading">Health and Care</h2>
-            </div>
-          </div>
-        </div>
-        <div class="col span_1_of_3 category-box">
-          <div class="categories wow zoomIn">
-            <div class="category-box">
-             <img class="icon-box" src="{% static './images/project.png'%}" >
-             <h2 class=" category-heading">Project Management</h2>
-             
-            </div>
-          
-          </div>
-        </div>
-        
-         </div>
-        </div>
+      
         <a href="a" class="btn btn-see-more1 " type="submit">See More</a>
         </div>
         
@@ -258,7 +194,7 @@ job openings, create company
   
   <div class="row">
    <div class="internship-box1">
-    <div class="content wow zoomIn" >
+    <div class="content " >
       <div class="filtered-category"><h1>IT & Programming</h1></div>
       <div class="add-option"><img class="plus" src= "{% static './images/plus.png'%}" ></div>
       <img class="category-icon" src="{% static './images/data-sci.png'%}" >
@@ -270,7 +206,7 @@ job openings, create company
 
    </div>
    <div class=" internship-box2">
-    <div class="content wow zoomIn" >
+    <div class="content " >
       <div class="filtered-category"><h1>IT & Programming</h1></div>
       <div class="add-option"><img class="plus" src= "{% static './images/plus.png'%}" ></div>
       <img class="category-icon" src="{% static './images/data-sci.png'%}" >
@@ -282,7 +218,7 @@ job openings, create company
 
    </div>
    <div class=" internship-box3">
-    <div class="content wow zoomIn" >
+    <div class="content " >
       <div class="filtered-category"><h1>IT & Programming</h1></div>
       <div class="add-option"><img class="plus" src= "{% static './images/plus.png'%}" ></div>
       <img class="category-icon" src="{% static './images/data-sci.png'%}" >
@@ -297,7 +233,7 @@ job openings, create company
   </div>  
   <div class="row">
     <div class="internship-box1">
-     <div class="content wow zoomIn" >
+     <div class="content " >
        <div class="filtered-category"><h1>IT & Programming</h1></div>
        <div class="add-option"><img class="plus" src= "{% static './images/plus.png'%}" ></div>
        <img class="category-icon" src="{% static './images/data-sci.png'%}" >
@@ -309,7 +245,7 @@ job openings, create company
  
     </div>
     <div class=" internship-box2">
-     <div class="content wow zoomIn" >
+     <div class="content " >
        <div class="filtered-category"><h1>IT & Programming</h1></div>
        <div class="add-option"><img class="plus" src= "{% static './images/plus.png'%}" ></div>
        <img class="category-icon" src="{% static './images/data-sci.png'%}" >
@@ -321,7 +257,7 @@ job openings, create company
  
     </div>
     <div class=" internship-box3">
-     <div class="content wow zoomIn" >
+     <div class="content " >
        <div class="filtered-category"><h1>IT & Programming</h1></div>
        <div class="add-option"><img class="plus" src= "{% static './images/plus.png'%}" ></div>
        <img class="category-icon" src="{% static './images/data-sci.png'%}" >
@@ -336,7 +272,7 @@ job openings, create company
    </div>  
    <div class="row">
     <div class="internship-box1">
-     <div class="content wow zoomIn" >
+     <div class="content " >
        <div class="filtered-category"><h1>IT & Programming</h1></div>
        <div class="add-option"><img class="plus" src= "{% static './images/plus.png'%}" ></div>
        <img class="category-icon" src="{% static './images/data-sci.png'%}" >
@@ -348,7 +284,7 @@ job openings, create company
  
     </div>
     <div class=" internship-box2">
-     <div class="content wow zoomIn" >
+     <div class="content " >
        <div class="filtered-category"><h1>IT & Programming</h1></div>
        <div class="add-option"><img class="plus" src= "{% static './images/plus.png'%}" ></div>
        <img class="category-icon" src="{% static './images/data-sci.png'%}" >
@@ -360,7 +296,7 @@ job openings, create company
  
     </div>
     <div class=" internship-box3">
-     <div class="content wow zoomIn" >
+     <div class="content " >
        <div class="filtered-category"><h1>IT & Programming</h1></div>
        <div class="add-option"><img class="plus" src= "{% static './images/plus.png'%}" ></div>
        <img class="category-icon" src="{% static './images/data-sci.png'%}" >
@@ -491,7 +427,7 @@ job openings, create company
         <ul>
           
           <li class="links">
-            <a href="{% url 'user_login'%}" class="link-head">
+            <a href="{% url 'user_signup'%}" class="link-head">
              Register
             </a>
   
@@ -519,7 +455,7 @@ job openings, create company
         <ul>
           
           <li class="links">
-            <a href="{% url 'user_login'%}" class="link-head">
+            <a href="{% url 'user_signup'%}" class="link-head">
              Register
             </a>
   
@@ -546,7 +482,7 @@ job openings, create company
         <ul class="link">
           
           <li class="links">
-            <a href="{% url 'user_login'%}" class="link-head">
+            <a href="{% url 'user_signup'%}" class="link-head">
              Register
             </a>
   

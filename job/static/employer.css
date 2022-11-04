@@ -3,7 +3,7 @@ body{
 }
 .linkbox{
     background-color: #fff;
-    position: relative;
+    position: fixed;
     top: 87px;
     width: 350px;
     height: 700px;
@@ -332,6 +332,7 @@ body{
     font-family: 'Poppins';
     font-size: 35px;
     font-weight: 400;
+    top: 771px;
 
 }
 .cards{
@@ -341,7 +342,7 @@ body{
     left: 426px;
     background-color: #fff;
     position: relative;
-    top: 40px;
+    top: 829px;
     box-shadow:0px 0px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
 
@@ -487,7 +488,7 @@ body{
         left: 426px;
         background-color: #fff;
         position: relative;
-        top: 100px;
+        top: 898px;
         border-radius: 5px;
         box-shadow:0px 0px 4px rgba(0, 0, 0, 0.25);
     

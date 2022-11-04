@@ -3,7 +3,7 @@ body{
 }
 .linkbox{
     background-color: #fff;
-    position: relative;
+    position: fixed;
     top: 87px;
     width: 350px;
     height: 700px;
@@ -37,7 +37,7 @@ body{
     left: 426px;
     background-color: #fff;
     position: relative;
-    top: 46px;
+    top: 804px;
     border-radius: 10px;
 
 
@@ -185,7 +185,7 @@ input[type=password]:visited{
         left: 426px;
         background-color: #fff;
         position: relative;
-        top: 46px;
+        top: 804px;
         border-radius: 10px;
     
     

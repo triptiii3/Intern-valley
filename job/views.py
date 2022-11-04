@@ -1,30 +1,40 @@
 from distutils.log import error
 from django.shortcuts import render
 from .models import * 
+from home.models import categories
 from django.contrib.auth.models import User
 
 # Create your views here.
 def index(request):
-    return render(request, 'index.html')
+    icategorydata=categories.objects.all()
+    
+    data={
+        'icategorydata':icategorydata
+    }
+        
+    return render(request, 'index.html',data)
 
 def admin_login(request):
     return render(request, 'admin_login.html')
 
-def user_login(request):
+def user_signup(request):
     error = ""
     if request.method == 'POST':
         f= request.POST['fname']
         l= request.POST['lname']
         e= request.POST['email']
         p= request.POST['pwd']
+        c=request.POST['contact']
+        g=request.POST['gender']
+
         try:
             user = User.objects.create_user(first_name=f,last_name=l,username=e, password=p)
-            StudentUser.objects.create(user=user,type="student")
+            StudentUser.objects.create(user=user,mobile=c,gender=g)
             error="no"
         except:
             error="yes"
     d={'error':error}
-    return render(request, 'user_login.html',d)
+    return render(request, 'user_signup.html',d)
 
 
 

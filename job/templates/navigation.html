@@ -53,7 +53,7 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                  
-                  <li><a class="dropdown-item" href="{%url 'user_login'%}">Register</a><li>
+                  <li><a class="dropdown-item" href="{%url 'user_signup'%}">Register</a><li>
                   <li><a class="dropdown-item" href="{% url 'employerpage'%}">Post internship</a><li>
                  
                   <li><a class="dropdown-item" href="{% url 'hirefreelancer'%}">Hire a freelancer</a><li>
@@ -65,7 +65,7 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                  
-                  <li><a class="dropdown-item" href="{%url 'user_login'%}">Register</a><li>
+                  <li><a class="dropdown-item" href="{%url 'user_signup'%}">Register</a><li>
                   <li><a class="dropdown-item" href="{% url 'canduser'%}">Post your skills</a><li>
                   <li><a class="dropdown-item" href="{% url 'canduser'%}">Internship Search</a><li>
                   
@@ -77,7 +77,7 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                  
-                  <li><a class="dropdown-item" href="{%url 'user_login'%}">Register</a><li>
+                  <li><a class="dropdown-item" href="{%url 'user_signup'%}">Register</a><li>
                   <li><a class="dropdown-item" href="{% url 'hirefreelancer'%}">Update your profile</a><li>
                 </ul>
               </li>
@@ -107,8 +107,8 @@ class="close" title="Close Modal">&times;</span>
     <a href="a" class="btn btn-login" type="submit">Login</a>
     
     
-      <span class="psw"> <a href="#" class="login-links">Forgot password?</a></span>
-      <span class="register">Dont have an account? <a href="{% url 'user_login'%}" class="login-links">Register</a></span>
+      
+      <span class="register">Dont have an account? <a href="{% url 'user_signup'%}" class="login-links">Register</a></span>
       </div>
       
   </div>

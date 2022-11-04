@@ -1,109 +1,102 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:wght@400;700&display=swap');
 
-*{
-    font-family: 'Gentium Plus', serif; user-select: none;
-    padding: 0; margin: 0; box-sizing: border-box;
-}
-body{
-    min-height: 100vh; width: 100%;
-    display: flex;
-    align-items: center; justify-content: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.364), rgba(0, 0, 0, 0.271)) ,url('./images/loginbg.jpg') no-repeat center center;
-	background-size: cover;
-}
-.content{
-    width: 90%; height: 600px;
-    display: flex;
-    align-items: center; justify-content: center;
-}
-.container{
-    width: 480px;
-    min-height: 474px;
-    background-color: white;
-    box-shadow: 0 0 10px 10px rgba(0,0,0,0.01);
-    display: flex; flex-direction: column;
-    align-items: center; justify-content: space-between;
-}
-.nav, .btn{
-    height: 55px;
-    outline: none;
-    border: none;
-    cursor: pointer;
+
+
+body {
+    min-height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    top: 0px;
+background: #00afec;;
+    background-size: cover;
 }
-.btn{
-    background-color: #0466e573;
-    transition: 0.2s linear; font-size: 15px;
-    font-weight: 700; color: black;
-    border-radius: 0px;
-}
-#signUp{
-    display: none;
-    flex-direction: column;
-    transition: 0.2s linear;
-    position: absolute;
-}
-.btn1{
-    background-color: white;
-}
-#login{
-    display: flex;
-    flex-direction: column;
-    transition: 0.2s linear;
-    position: absolute;
-}
-.main{
-    height: 381px; width: 100%;
-    display: flex; align-items: center; justify-content: space-evenly;
-}
-.loginClass, .signupClass{
-    width: 350px;
-    display: flex; align-items: center; justify-content: center;
-}
-input[type="text"], input[type="password"], input[type="email"]{
-    width: 333px;
-    height: 50px;
-    /* border-bottom: 2px solid #cdb4db; */
-    border: none;
-    border: 1px solid #ccc;
-    /* border-bottom: 2px solid #cdb4db; */
-    font-size: 15px;
-    border-radius: 10px;
-    padding: 10px 10px;
-    top: -20px;
+.btn-primary {
+    background-color: #3b71ca;
+    color: #fff;
+    top: -50px;
+    box-shadow: 0 4px 9px -4px #3b71ca;
     position: relative;
 }
-input[type="text"]::placeholder, input[type="password"]::placeholder, input[type="email"]::placeholder{
+.card {
+    border: 0;
+    /* box-shadow: 0 2px 15px -3px rgb(0 0 0 / 7%), 0 10px 20px -2px rgb(0 0 0 / 4%); */
+}
+.work {
+    height: 572px;
+    width: 891px;
+    position: relative;
+    left: 45px;
+    top: 10px;
+}
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+    }
+    .card-registration .select-arrow {
+    top: 13px;
+    }
+    .fixed-top {
+        top: 23px;
+        position: relative;
+    }
+    .navbar{
+        background-color: #fff;
+       height: 100px;
+   
+        position: fixed !important;
+    
+        color: #373737;
+    }
+    .navbar {
+        /* box-shadow: 0 4px 12px 0 rgb(0 0 0 / 7%), 0 2px 4px rgb(0 0 0 / 5%); */
+        padding-top: 0.5625rem;
+    }
+    .dropdown-item{
+        padding: 1rem 1rem;
+    }
+    .nav-link:link,
+    .nav-link:visited{
+         font-family: 'Poppins';
+    font-style: normal;
+    font-size: 18px;
+    padding: 20px;
     color: #373737;
-}
-button{
-    background-color: #0466e573;
-    width: 212px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    height: 51px;
-    color: black;
-    font-weight: 700;
-    font-size: 15px;
-    position: relative;
-    top: -20px;
-    border-radius: 10px
-}
-.signBtn{
-    margin-top: 10px;
-}
-.enquire{
-    display: flex; width: 300px;
-    justify-content: space-between; align-items: center;
-}
-a{
-    color: black;
-    text-decoration: none;
-}
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+        
+    } 
+    .nav-link:hover,
+    .nav-link:active{
+        color: #373737;
+        border-bottom: 2px solid #0466E5;
+    }
+    .navbar{
+       
+    
+        color: #373737;
+    }
+    .navbar.fixedbar{
+        background-color: #fff;
+       height: 100px;
+        
+        position: fixed !important;
+    
+        color: #373737;
+    }
+    .contains{width: 80%;
+        left: -142px;
+        position: relative;
+    }
+    .navbar-nav .nav-link {
+        padding-right: 0;
+        padding-left: 0;
+        position: relative;
+        top: -319px;
+        left: -742px;
+        color: #fff;
+    }

@@ -6,10 +6,25 @@
     left: 426px;
     background-color: #fff;
     position: relative;
-    top: 61px;
+    top: 804px;
     border-radius: 5px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
+}
+#new{
+  height: 53px;
+  width: 244px;
+  text-decoration: none;
+  border: none;
+  background: none;
+  background-size: 25px;
+  position: absolute;
+  left: 700px;
+  padding: 10px 5px;
+  border-radius: 5px;
+  top: 16px;
+  color: #9b9b9b;
+  border: 1px solid #ccc;
 }
 .block h1{
 font-family: 'Poppins';

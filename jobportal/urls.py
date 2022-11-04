@@ -20,14 +20,15 @@ from django.contrib import admin
 from django.urls import path
 from job.views import *
 from django.conf import settings
-from django.conf.urls.static import static
+from django.conf.urls.static import serve
+from django.conf.urlsimport url
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 path('', index,name="index"),
 path('admin_login', admin_login ,name="admin_login"),
-path('user_login', user_login ,name="user_login"),
+path('user_signup', user_signup ,name="user_signup"),
 path('candidatepage', candidatepage ,name="candidatepage"),
 path('employerpage', employerpage ,name="employerpage"),
 path('employerdetail', employerdetail ,name="employerdetail"),
@@ -50,5 +51,6 @@ path('candresume', candresume ,name="candresume"),
 path('candshortjobs', candshortjobs ,name="candshortjobs"),
 path('canduser', canduser ,name="canduser"),
 path('hirefreelancer', hirefreelancer ,name="hirefreelancer"),
-
-]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+ url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
+url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
+]+ static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
