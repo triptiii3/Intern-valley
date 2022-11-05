@@ -21,7 +21,7 @@ from django.urls import path
 from job.views import *
 from django.conf import settings
 from django.conf.urls.static import serve
-from django.conf.urlsimport url
+from django.conf.urls import url
 
 
 urlpatterns = [
