@@ -1,1 +1,1 @@
-web:gunicorn jobportal.wsgi
+web:gunicorn intern-valley.wsgi
