@@ -1,1 +1,1 @@
-web: gunicorn intern-valley.wsgi --log-file -
+web: gunicorn intern-valley.wsgi 
