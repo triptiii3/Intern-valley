@@ -51,6 +51,6 @@ path('candresume', candresume ,name="candresume"),
 path('candshortjobs', candshortjobs ,name="candshortjobs"),
 path('canduser', canduser ,name="canduser"),
 path('hirefreelancer', hirefreelancer ,name="hirefreelancer"),
- url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
+url(r'^media/(?P<path>.*)$', serve,{'document_root': settings.MEDIA_ROOT}), 
 url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
 ]+ static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
